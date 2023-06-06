@@ -90,7 +90,7 @@ const getAllBook = (request, h) => {
     id: book.id,
     name: book.name,
     publisher: book.publisher,
-  })).slice(0, finished ? 0 : 2);
+  })).slice(0, finished ? 0 : 1);
 
   const response = h.response({
     status: 'success',
